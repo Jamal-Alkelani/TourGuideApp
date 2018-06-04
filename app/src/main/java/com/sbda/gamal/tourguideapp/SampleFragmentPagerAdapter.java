@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
     final int PAGE_COUNT = 4;
-    private String tabTitles[] = new String[] { "Tours", "Audio Gudies", "Hotels","Eat" };
+    private String tabTitles[];
     private int tabIcons[]={R.drawable.outline_map_24,R.drawable.outline_volume_up_24,R.drawable.outline_hotel_24,R.drawable.outline_fastfood_24};
     private Context context;
     private ArrayList<ToursInfo> toursInfo;
@@ -21,6 +21,7 @@ public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
         this.context = context;
         this.toursInfo=toursInfo;
         this.hotelsInfo=hotelsInfo;
+        tabTitles = new String[] {context.getString(R.string.tab_text_1),context.getString(R.string.tab_text_2),context.getString(R.string.tab_text_3),context.getString(R.string.tab_text_4)};
     }
 
     public void setTabIcons(TabLayout t){
