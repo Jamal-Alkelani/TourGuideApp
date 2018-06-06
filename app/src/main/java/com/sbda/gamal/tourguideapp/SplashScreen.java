@@ -33,7 +33,7 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    sleep(500);
+                    sleep(2500);
                     startActivity(new Intent(getApplicationContext(),HomeScreen.class));
                 } catch (InterruptedException e) {
                     e.printStackTrace();
